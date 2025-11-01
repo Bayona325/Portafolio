@@ -89,4 +89,4 @@ docs(readme): agregar instrucciones de despliegue
 
 ---
 
-> 💡 *“Cada línea de código es una oportunidad para mejorar y aprender.”* — Adrián David Bayona Solano
+> 💡 *“Incluso un punto y coma es importante”* — Adrián David Bayona Solano
