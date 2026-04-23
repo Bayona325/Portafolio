@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Portafolio one-page de Adrián David Bayona Solano — Desarrollador Junior en formación.">
+  <meta name="description" content="Portafolio one-page de Adrián David Bayona Solano — Desarrollador Junior certificado por Campuslands.">
   <link rel="stylesheet" href="css/Portafolio.css"/>
   <title>Adrián David Bayona Solano — Portafolio</title>
+  <script defer src="js/modals.js"></script>
 </head>
 <body>
   <div class="container" id="top">
@@ -14,7 +15,7 @@
         <div class="logo">AB</div>
         <div>
           <div style="font-weight:700">Adrián David Bayona Solano</div>
-          <small class="muted">Programador Junior</small>
+          <small class="muted">Desarrollador Junior Certificado</small>
         </div>
       </a>
       <nav>
@@ -32,17 +33,17 @@
         <div class="hero-grid">
           <div>
             <h1 class="title">¡Hola! 👋 Soy <span style="color:var(--accent)">Adrián David Bayona Solano</span></h1>
-            <p class="subtitle">Programador Junior de aprendizaje rápido y organizado en el desarrollo de tareas. Poseo experiencia breve en el área administrativa de recursos humanos y habilidades en Python, Java, HTML, CSS, JavaScript, Android Studio y Apache.</p>
+            <p class="subtitle">Egresado certificado de Campuslands con experiencia en desarrollo web y aplicaciones. Desarrollador Junior proactivo, organizado y comprometido con aprender nuevas tecnologías. Especializado en frontend, backend y desarrollo de aplicaciones móviles.</p>
             <div class="skills" style="margin-top:0.8rem">
-              <span class="chip">Python</span>
               <span class="chip">JavaScript</span>
+              <span class="chip">React</span>
+              <span class="chip">Python</span>
               <span class="chip">Java</span>
-              <span class="chip">Android Studio</span>
+              <span class="chip">HTML & CSS</span>
               <span class="chip">MySQL</span>
-              <span class="chip">Git</span>
-              <span class="chip">Apache</span>
+              <span class="chip">Git & GitHub</span>
             </div>
-            <p style="margin-top:1rem;" class="muted">Formación en Campuslands y con estudios en el SENA Bucaramanga.</p>
+            <p style="margin-top:1rem;" class="muted">📜 Certificado por Campuslands • 🎓 Técnico en Programación SENA • 📍 Bucaramanga, Colombia</p>
           </div>
           <aside>
             <picture>
@@ -58,34 +59,162 @@
       </section>
 
       <section id="projects" style="margin-top:1rem">
-        <h2>Experiencia</h2>
+        <h2>Experiencia Laboral</h2>
         <div class="projects projects-grid">
           <article class="card">
-            <h3>FoomeSalud — Bucaramanga</h3>
-            <p>Ayudante en el área administrativa de talento humano, servicios ambulatorios y domiciliarios. Desarrollé habilidades en organización, empatía y comunicación.</p>
+            <h3>🏥 FoomeSalud — Bucaramanga</h3>
+            <p>Ayudante en el área administrativa de talento humano, servicios ambulatorios y domiciliarios. Desarrollé habilidades en organización, empatía y comunicación efectiva.</p>
           </article>
           <article class="card">
-            <h3>Campuslands — Anillo Vial</h3>
-            <p>Aprendizaje continuo en diversos lenguajes de programación y fundamentos del desarrollo de software. Prácticas en HTML, CSS, JS y bases de datos.</p>
+            <h3>✅ Campuslands — Anillo Vial</h3>
+            <p>Bootcamp de programación intensivo completado. Especialización en full-stack development, JavaScript, bases de datos y mejores prácticas de desarrollo.</p>
           </article>
           <article class="card">
-            <h3>SENA Bucaramanga</h3>
-            <p>Formación en Apache, MySQL y Android Studio. Enfocado en la creación de aplicaciones móviles y comprensión del entorno backend.</p>
+            <h3>📱 SENA Bucaramanga</h3>
+            <p>Técnico en programación de aplicaciones móviles. Formación en Apache, MySQL, Android Studio y comprensión del entorno backend.</p>
           </article>
         </div>
       </section>
 
-      <section id="about" style="margin-top:1rem">
-        <h2>Perfil</h2>
-        <p class="muted">Soy un programador junior con gran motivación por aprender y mejorar constantemente. Busco oportunidades que me permitan obtener experiencia profesional, aportar valor al equipo y seguir profundizando mis conocimientos técnicos mientras cumplo los objetivos de la empresa.</p>
+      <section id="featured-projects" style="margin-top:2rem">
+        <h2>Proyectos Destacados</h2>
+        <p class="muted" style="margin-bottom:1rem">Estos son algunos de los proyectos que he realizado durante mi formación y desarrollo profesional.</p>
+        <div class="featured-projects-grid">
+          <!-- Game Concept Hub - Principal -->
+          <article class="featured-card featured-primary">
+            <div class="featured-badge">🌟 Proyecto Principal</div>
+            <h3>Game Concept Hub</h3>
+            <p class="featured-description">Plataforma interactiva para gestionar y compartir conceptos de videojuegos. Incluye autenticación de usuarios, galería de conceptos, comentarios y sistema de puntuación.</p>
+            <div class="featured-techs">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">API REST</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+            <button class="modal-trigger" data-modal="modal-game-hub">Ver Detalles</button>
+          </article>
+
+          <!-- Proyecto JavaScript -->
+          <article class="featured-card">
+            <h3>Proyecto JavaScript</h3>
+            <p class="featured-description">Aplicación web interactiva desarrollada con vanilla JavaScript. Enfocada en funcionalidad, diseño responsivo y buenas prácticas de código limpio.</p>
+            <div class="featured-techs">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">DOM</span>
+            </div>
+            <button class="modal-trigger" data-modal="modal-js-project">Ver Detalles</button>
+          </article>
+
+          <!-- Figma -->
+          <article class="featured-card">
+            <h3>Diseño UI/UX con Figma</h3>
+            <p class="featured-description">Proyecto de diseño enfocado en prototipado, wireframes y componentes reutilizables. Demonstración de habilidades en diseño de interfaces modernas y responsivas.</p>
+            <div class="featured-techs">
+              <span class="tech-tag">Figma</span>
+              <span class="tech-tag">UI Design</span>
+              <span class="tech-tag">Prototyping</span>
+              <span class="tech-tag">Components</span>
+            </div>
+            <button class="modal-trigger" data-modal="modal-figma">Ver Detalles</button>
+          </article>
+        </div>
       </section>
 
-      <section id="contact" style="margin-top:1rem">
+      <!-- MODALS -->
+      <div class="modal" id="modal-game-hub">
+        <div class="modal-content">
+          <button class="modal-close" data-modal="modal-game-hub">✕</button>
+          <h2>🎮 Game Concept Hub</h2>
+          <p><strong>Descripción:</strong> Plataforma web completa para que desarrolladores y entusiastas de videojuegos compartan, comenten y evaluén conceptos de juegos. Proyecto full-stack con autenticación, base de datos relacional y API RESTful.</p>
+          <h4>Características principales:</h4>
+          <ul>
+            <li>Sistema de autenticación de usuarios seguro</li>
+            <li>Galería de conceptos con búsqueda y filtros</li>
+            <li>Comentarios y sistema de puntuación (likes)</li>
+            <li>Perfil de usuario personalizable</li>
+            <li>Panel administrativo para gestión de contenidos</li>
+            <li>Interfaz responsiva y moderna</li>
+          </ul>
+          <h4>Tecnologías utilizadas:</h4>
+          <ul>
+            <li><strong>Frontend:</strong> JavaScript, React, HTML5, CSS3</li>
+            <li><strong>Backend:</strong> Node.js / Python (API REST)</li>
+            <li><strong>Base de datos:</strong> MySQL</li>
+            <li><strong>Control de versiones:</strong> Git & GitHub</li>
+          </ul>
+          <div style="margin-top:1.5rem">
+            <a href="https://github.com/Bayona325/Game-Concept-Hub" target="_blank" class="cta">Ver en GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal-js-project">
+        <div class="modal-content">
+          <button class="modal-close" data-modal="modal-js-project">✕</button>
+          <h2>✨ Proyecto JavaScript</h2>
+          <p><strong>Descripción:</strong> Aplicación web interactiva desarrollada con vanilla JavaScript puro, sin librerías externas. Demuestra dominio de conceptos fundamentales de JavaScript, manipulación del DOM y buenas prácticas de código limpio.</p>
+          <h4>Características principales:</h4>
+          <ul>
+            <li>Lógica interactiva con vanilla JavaScript</li>
+            <li>Interfaz responsive y moderna</li>
+            <li>Gestión de estado local eficiente</li>
+            <li>Animaciones suaves y transiciones CSS</li>
+            <li>Código limpio y bien comentado</li>
+            <li>Validación de formularios</li>
+          </ul>
+          <h4>Tecnologías utilizadas:</h4>
+          <ul>
+            <li><strong>JavaScript ES6+</strong> (Variables, funciones flecha, destructuring)</li>
+            <li><strong>Manipulación del DOM</strong> con JavaScript puro</li>
+            <li><strong>CSS3</strong> con flexbox y grid</li>
+            <li><strong>HTML5</strong> semántico</li>
+          </ul>
+          <div style="margin-top:1.5rem">
+            <a href="https://github.com/Bayona325/Proyecto-JavaScript" target="_blank" class="cta">Ver en GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal-figma">
+        <div class="modal-content">
+          <button class="modal-close" data-modal="modal-figma">✕</button>
+          <h2>🎨 Diseño UI/UX con Figma</h2>
+          <p><strong>Descripción:</strong> Proyecto de diseño profesional que demuestra habilidades en UI/UX design. Incluye wireframes, prototipos interactivos, componentes reutilizables y especificaciones de diseño detalladas.</p>
+          <h4>Contenido del proyecto:</h4>
+          <ul>
+            <li>Wireframes de baja y alta fidelidad</li>
+            <li>Sistema de diseño (Design System) con componentes base</li>
+            <li>Prototipos interactivos funcionales</li>
+            <li>Paleta de colores y tipografía documentada</li>
+            <li>Especificaciones de espaciado y tamaños</li>
+            <li>Responsive design para múltiples dispositivos</li>
+          </ul>
+          <h4>Herramientas y técnicas:</h4>
+          <ul>
+            <li><strong>Figma</strong> - Diseño colaborativo</li>
+            <li><strong>UI Design</strong> - Interfaz coherente y atractiva</li>
+            <li><strong>Prototyping</strong> - Flujos de interacción</li>
+            <li><strong>Component Libraries</strong> - Reutilización de elementos</li>
+          </ul>
+          <div style="margin-top:1.5rem">
+            <a href="https://github.com/Bayona325/Figma" target="_blank" class="cta">Ver Repositorio</a>
+          </div>
+        </div>
+      </div>
+
+      <section id="about" style="margin-top:2rem">
+        <h2>Sobre mí</h2>
+        <p class="muted">Soy un desarrollador junior certificado por Campuslands con un fuerte compromiso en el aprendizaje continuo y la excelencia en el código. Me apasiona crear soluciones web innovadoras, resolver problemas complejos y colaborar con equipos multidisciplinarios. Busco oportunidades que me permitan aplicar mis habilidades técnicas, crecer profesionalmente y contribuir significativamente en proyectos desafiantes.</p>
+      </section>
+
+      <section id="contact" style="margin-top:2rem">
         <h2>Contacto</h2>
         <div class="contact">
-          <p class="muted">¿Quieres saber más sobre mi trabajo o colaborar conmigo? Escríbeme o revisa mis repositorios.</p>
+          <p class="muted">¿Interesado en colaborar o conocer más sobre mis proyectos? Ponte en contacto conmigo a través del email o explora mis repositorios de GitHub.</p>
           <div>
-            <a class="cta" href="mailto:adrianbayona325@gmail.com">Enviar email</a>
+            <a class="cta" href="mailto:adrianbayona325@gmail.com">Enviar Email</a>
             <a class="btn-outline" href="https://github.com/Bayona325" target="_blank">Ver GitHub</a>
           </div>
         </div>
@@ -94,8 +223,8 @@
 
     <footer>
       <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
-        <div class="muted">© 2025 Adrián David Bayona Solano — Desarrollador Junior</div>
-        <div class="muted"><a class="btn-outline" href="https://www.linkedin.com/in/adri%C3%A1n-david-bayona-solano-249420397?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium" target="_blank">LinkedIn</a> · GitHub</div>
+        <div class="muted">© 2026 Adrián David Bayona Solano — Desarrollador Junior Certificado</div>
+        <div class="muted"><a class="btn-outline" href="https://www.linkedin.com/in/adrián-david-bayona-solano-249420397?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium" target="_blank">LinkedIn</a> · <a class="btn-outline" href="https://github.com/Bayona325" target="_blank">GitHub</a></div>
       </div>
     </footer>
   </div>
